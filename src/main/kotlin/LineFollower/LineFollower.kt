@@ -3,20 +3,7 @@ package LineFollower
 import com.sun.org.apache.xpath.internal.operations.Bool
 
 class LineFollower {
-    //maju/mundur --true maju --false mundur
-    var r1:Boolean=true
-    var r2:Boolean=true
-    var r3:Boolean=true
-    var r4:Boolean=true
-
-    //speed
-    var speedR1:Int=0
-    var speedR2:Int=0
-    var speedR3:Int=0
-    var speedR4:Int=0
-
-    //maju
-    fun move(_r1:Boolean, _r2:Boolean, speed1:Int, speed2:Int){
+       fun move(_r1:Boolean, _r2:Boolean, speed1:Int, speed2:Int){
         if(_r1 == true && _r2 == true && speed1 == speed2){
             println("Maju dengan kecepatan $speed1")
         }else if(_r1 == false && _r2 == false && speed1 == speed2){
